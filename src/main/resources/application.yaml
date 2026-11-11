@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: pokedex-trainer-api
+  datasource:
+    url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5433/pokedex}
+    username: ${POSTGRES_USER:pokedex}
+    password: ${POSTGRES_PASSWORD:pokedex}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
